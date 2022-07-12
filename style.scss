@@ -7,7 +7,9 @@ body {
   max-width: 1000px;
   margin: 20px auto;
 }
-
+h1 {
+  text-align: center;
+}
 .form {
   display: grid;
   grid-template-columns: 1fr 150px;
@@ -23,10 +25,38 @@ body {
     font-size: 20px;
   }
 }
+
 .weather {
+  &__location {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
   &__city {
   }
 
+  &__img {
+    &_flag {
+      width: 30px;
+    }
+
+    &_weather {
+    }
+  }
   &__temperature {
+  }
+
+  &__wind {
+  }
+
+  &__visibility {
+  }
+
+  &__description {
+    &_wrapper {
+      display: flex;
+      gap: 20px;
+    }
   }
 }
