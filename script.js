@@ -11,7 +11,7 @@ let key = 'ac33dbc75c16a1411070776e8365c1c1';
 
 form.addEventListener('submit', (e) => {
   e.preventDefault()
-  fetch('http://api.openweathermap.org/data/2.5/weather?q=' + input.value + '&appid=' + key)
+  fetch('http://api.openweathermap.org/data/2.5/weather?q=' + input.value + '&appid=ac33dbc75c16a1411070776e8365c1c1')
     .then(response => response.json())
     .then(commits => {
       console.log(commits, commits.cod);
